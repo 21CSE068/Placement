@@ -1,0 +1,10 @@
+public class Transactions {
+    public static void main(String[] args) {
+        NewClass accA = new NewClass("Account A", 5000);
+        NewClass accB = new NewClass("Account B", 2500);
+        accA.withdraw(1500);
+        accB.deposit(1500);
+        accB.withdraw(3000);
+        accA.deposit(3000);
+    }
+}
