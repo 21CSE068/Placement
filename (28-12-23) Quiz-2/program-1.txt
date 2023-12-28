@@ -1,0 +1,18 @@
+public class Main
+{
+    public Main() {
+        System.out.println("No-argument constructor called");
+    }
+    public Main(String defaultParam) {
+        System.out.println("Default constructor called with parameter: " + defaultParam);
+    }
+    public Main(int param1, String param2) {
+        System.out.println("Parameterized constructor called with parameters: " + param1 + ", " + param2);
+    }
+    public static void main(String[] args) {
+        Main obj1 = new Main(); 
+        Main obj2 = new Main("Custom"); 
+        Main obj3 = new Main(42, "Hello"); 
+    }
+}
+
