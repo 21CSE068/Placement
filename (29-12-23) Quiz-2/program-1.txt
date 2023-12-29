@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main
+{
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+    public double multiply(double x, double y) {
+        return x * y ;
+    }
+    public static void main(String[] args) {
+        Main calculator = new Main();
+        Scanner obj = new Scanner(System.in);
+        System.out.print("Enter the first integer: ");
+        int int1 = obj.nextInt();
+        System.out.print("Enter the second integer: ");
+        int int2 = obj.nextInt();
+        int result1 = calculator.multiply(int1, int2);
+        System.out.println("Multiplication of integers: " + result1);
+        System.out.print("Enter the first double: ");
+        double double1 = obj.nextDouble();
+        System.out.print("Enter the second double: ");
+        double double2 = obj.nextDouble();
+        double result2 = calculator.multiply(double1, double2);
+        System.out.println("Multiplication of doubles: " + result2);
+        }
+}
